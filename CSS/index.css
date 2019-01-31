@@ -75,8 +75,10 @@
   background-color: white;
   position: relative;
   height: 50px;
+  transition: height 1s ease;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
+  cursor: pointer;
 }
 .article h2 {
   font-size: 28px;
@@ -96,7 +98,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  font-size: 12px;
+  font-size: 16px;
   color: grey;
   cursor: pointer;
   transform: translate(-50%);

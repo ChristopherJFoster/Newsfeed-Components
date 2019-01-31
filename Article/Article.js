@@ -9,7 +9,8 @@ class Article {
     // Using your expandButton reference, update the text on your expandButton to say "expand"
     this.expandButton.textContent = "expand";
     // Set a click handler on the expandButton reference, calling the expandArticle method.
-    this.expandButton.addEventListener("click", () => this.expandArticle());
+    this.domElement.addEventListener("click", () => this.expandArticle());
+    // I wanted the user to be able to click anywhere on an article to open/close it. It was surprisingly easy to accomplish this. In the above property assignment, I changed "expandButton" to "domElement".
   }
 
   expandArticle() {
@@ -29,5 +30,5 @@ class Article {
 
 */
 
-let articles = document.querySelectorAll(".article");
+const articles = document.querySelectorAll(".article");
 articles.forEach(element => new Article(element));
