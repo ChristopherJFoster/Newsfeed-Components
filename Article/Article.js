@@ -30,5 +30,5 @@ class Article {
 
 */
 
-let articles = document.querySelectorAll(".article");
+const articles = document.querySelectorAll(".article");
 articles.forEach(element => new Article(element));
